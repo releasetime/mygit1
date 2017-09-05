@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href = "css/dafeiji.css" />
+		
+		<script src = "../js/base.js"></script>
+		<script src = "../js/load.js"></script>
+		<script src = "../js/myplane.js"></script>
+		<script src = "../js/bullet.js"></script>
+		<script src = "../js/enemy.js"></script>
+		<script src = "../js/common.js"></script>
+		<script src = "../js/ajax.js"></script>
+		
+		<script>
+			
+			onload = function(){
+				
+				let olist = document.getElementById("list");
+				let ali = olist.getElementsByTagName("li");
+				let main = document.getElementById("main");
+				for(i = 0; i<ali.length; i++){
+					ali[i].onclick = function(){
+						//olist.parentNode.removeChild(olist)
+						main.removeChild(olist);
+						myPlane().fireInterval = this.value-0;
+						gameEngine.init().start();
+					}
+				}
+				
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<div id = "main">
+			<ul id = "list">
+				<li value = "1000">超级困难</li>
+				<li value = "700">非常困难</li>
+				<li value = "400">比较困难</li>
+				<li value = "100">春哥附体</li>
+			</ul>
+		</div>
+		
+	</body>
+</html>

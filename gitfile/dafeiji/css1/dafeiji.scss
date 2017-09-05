@@ -1,0 +1,9 @@
+@charset "utf-8";*{margin:0;padding:0}body,html{@include f;}#main{width:500px;height:100%;background:url(../images2/bg.jpg) repeat-y;background-size:cover;margin:0 auto;position:relative}.logo{width:428px;height:104px;background:url(../images2/logo.png);@include f5;top:20%;left:26px}.load{width:200px;height:40px;background:url(../images2/loading1.png) no-repeat;@include f5;top:70%;left:140px}.myplane{width:98px;height:122px;background:url(../images2/me.png) no-repeat;@include f5;}.bullet{width:8px;height:18px;background:url(../images2/bullet.png) no-repeat;@include f5;}.bullet-die{width:40px;height:43px;background:url(../images2/die1.png) no-repeat;@include f5;}/*!
+ * 大飞机
+ * 
+ */.enemy-large{width:165px;height:256px;background:url(../images2/plane3.png) no-repeat;@include f5;}/*!
+ * 中等飞机
+ * 
+ */.enemy-middle{width:70px;height:92px;background:url(../images2/plane2.png) no-repeat;@include f5;}/*!
+ * 小型敌机
+ */.enemy-small{width:59px;height:36px;background:url(../images2/plane1.png) no-repeat;@include f5;}
